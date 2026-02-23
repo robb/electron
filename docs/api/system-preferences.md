@@ -376,6 +376,10 @@ A `boolean` property which determines whether the app avoids using semitranspare
 
 **Deprecated:** Use the new [`nativeTheme.prefersReducedTransparency`](native-theme.md#nativethemeprefersreducedtransparency-readonly) API.
 
+### `systemPreferences.accessibilityDisplayShouldDifferentiateWithoutColor` _macOS_ _Readonly_
+
+A `boolean` property which determines whether the user prefers UI that differentiates items using something other than color alone (e.g. shapes or labels). This maps to [NSWorkspace.accessibilityDisplayShouldDifferentiateWithoutColor](https://developer.apple.com/documentation/appkit/nsworkspace/accessibilitydisplayshoulddifferentiatewithoutcolor).
+
 ### `systemPreferences.effectiveAppearance` _macOS_ _Readonly_
 
 A `string` property that can be `dark`, `light` or `unknown`.

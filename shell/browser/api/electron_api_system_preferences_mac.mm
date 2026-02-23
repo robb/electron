@@ -604,4 +604,9 @@ bool SystemPreferences::AccessibilityDisplayShouldReduceTransparency() {
       accessibilityDisplayShouldReduceTransparency];
 }
 
+bool SystemPreferences::AccessibilityDisplayShouldDifferentiateWithoutColor() {
+  return [[NSWorkspace sharedWorkspace]
+      accessibilityDisplayShouldDifferentiateWithoutColor];
+}
+
 }  // namespace electron::api

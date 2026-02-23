@@ -130,6 +130,9 @@ gin::ObjectTemplateBuilder SystemPreferences::GetObjectTemplateBuilder(
       .SetProperty(
           "accessibilityDisplayShouldReduceTransparency",
           &SystemPreferences::AccessibilityDisplayShouldReduceTransparency)
+      .SetProperty(
+          "accessibilityDisplayShouldDifferentiateWithoutColor",
+          &SystemPreferences::AccessibilityDisplayShouldDifferentiateWithoutColor)
 #endif
       .SetMethod("getAnimationSettings",
                  &SystemPreferences::GetAnimationSettings);

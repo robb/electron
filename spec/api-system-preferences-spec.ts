@@ -287,6 +287,12 @@ describe('systemPreferences module', () => {
     });
   });
 
+  ifdescribe(process.platform === 'darwin')('systemPreferences.accessibilityDisplayShouldDifferentiateWithoutColor', () => {
+    it('returns a boolean', () => {
+      expect(systemPreferences.accessibilityDisplayShouldDifferentiateWithoutColor).to.be.a('boolean');
+    });
+  });
+
   describe('systemPreferences.getAnimationSettings()', () => {
     it('returns an object with all properties', () => {
       const settings = systemPreferences.getAnimationSettings();

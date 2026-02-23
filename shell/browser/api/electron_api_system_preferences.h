@@ -109,6 +109,7 @@ class SystemPreferences final
   void RemoveUserDefault(const std::string& name);
   bool IsSwipeTrackingFromScrollEventsEnabled();
   bool AccessibilityDisplayShouldReduceTransparency();
+  bool AccessibilityDisplayShouldDifferentiateWithoutColor();
 
   std::string GetSystemColor(gin_helper::ErrorThrower thrower,
                              const std::string& color);
